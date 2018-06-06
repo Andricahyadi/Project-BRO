@@ -1,0 +1,86 @@
+/* CSS */
+
+@font-face {
+    font-family: "IBMPlexSans - Regular";
+    src: url('../fonts/IBMPlexSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: "URWbookMan - Light ";
+    src: url("../fonts/URWBookman-Light.otf");
+}
+
+@font-face {
+    font-family: "Raleway - Light";
+    src: url("../fonts/Raleway-Light.ttf");
+}
+
+* {
+    /* border: 1px solid red; */
+}
+
+section.features-part {
+    background: #EBEBEB;    
+    padding: 100px 0px;    
+    width: 100%;
+    /* height: 60vh; */
+    /* background: lightblue;     */
+}
+
+h2.title-features {
+    color: #333333;
+    font-family: "IBMPLexSans - Regular", sans-serif;
+    font-size: 46px;
+    margin: 20px 0px;
+}
+
+p.subtitle-features {
+    color: lightslategray;
+    font-family: "IBMPLexSans - Regular", sans-serif;
+    font-size: 16px;
+    margin: 20px 0px;
+}
+
+div.container-features {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5px 20px;
+}
+
+div.block-features {
+    color: #333333;
+    font-family: "IBMPLexSans - Regular", sans-serif;    
+    padding: 10px 10px;
+    text-align: left;
+}
+
+*.item-feature {
+    margin: 10px 0px;
+}
+
+img.icon-features {
+    width: 140px;
+    height: 140px;
+}
+
+p.title-icon-features {
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+p.explain-text {
+    font-size: 14px;
+}
+
+@media (min-width: 300px) and (max-width: 670px) {
+    div.container-features {
+        flex-direction: column;
+    }
+
+    div.block-features {
+        text-align: center;
+    }
+}

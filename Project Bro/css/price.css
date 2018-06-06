@@ -1,0 +1,107 @@
+/* CSS */
+
+@font-face {
+    font-family: "IBMPlexSans - Regular";
+    src: url('../fonts/IBMPlexSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: "URWbookMan - Light ";
+    src: url("../fonts/URWBookman-Light.otf");
+}
+
+@font-face {
+    font-family: "Raleway - Light";
+    src: url("../fonts/Raleway-Light.ttf");
+}
+
+section.price-list {
+    background: #212121;
+    width: 100%;
+    /* height: 670px; */
+}
+
+div.block-table-list {
+    padding: 250px 0px 100px 0px;    
+    width: 100%;
+}
+
+table.list-price-table {
+    color: #EBEBEB;
+    display: table;
+    font-family: "Raleway - Regular", sans-serif;
+    margin: auto;
+    padding: 25px 40px;
+    table-layout: auto;
+    width: 90%;    
+}
+
+tr, th, td {
+    border-top: 0.5px solid #2c2c2c;
+    text-align: center;
+    padding: 15px 0px;
+}
+
+td.domain-name {
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-right: 25px;
+}
+
+a.link-order {
+    color: #A5A5A5;
+    text-decoration: none;
+    transition: 0.2s ease-in;
+}
+
+a.link-order:hover {
+    color: #E13834;    
+}
+
+div.block-button-domain-list {
+    margin-top: 80px;
+    text-align: center;
+    width: 100%;
+}
+
+a.link-domain {
+    border: 2px solid #A5A5A5;
+    color: #A5A5A5;
+    padding: 12px 40px;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+a.link-domain:hover {
+    border: 2px solid #E13834;    
+    color: #E13834;
+}
+
+div.block-share-icon {
+    position: relative;
+    top: 100px;
+    text-align: center;
+}
+
+.item-share-icon {
+    font-size: 50px;    
+    margin: 20px;
+    transition: 0.4s ease;
+}
+
+.item-share-icon:hover {
+    color: #E13834;    
+}
+
+@media (min-width: 300px) and (max-width: 670px) {
+    table.list-price-table {
+        font-size: 10px;
+        padding: 0px 10px;
+        width: 100%;
+    }
+
+    .item-share-icon {
+        font-size: 32px;
+    }
+}
+

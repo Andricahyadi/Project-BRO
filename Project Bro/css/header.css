@@ -1,0 +1,160 @@
+/* CSS */
+* {
+    margin: 0;
+}
+
+body {
+    background: #EBEBEB;
+}
+
+@font-face {
+    font-family: "IBMPlexSans - Bold";
+    src: url('../fonts/IBMPlexSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: "IBMPlexSans - Regular";
+    src: url('../fonts/IBMPlexSans-Regular.ttf');
+}
+
+/* ----- */
+header.header-part {
+    background-color: #EBEBEB;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    z-index: 100;
+}
+
+a.logo-web {
+    color: #333333;
+    float: left;
+    font-family: "IBMPlexSans - Bold", sans-serif;
+    font-size: 39px;
+    display: block;
+    padding: 10px 20px;
+}
+
+nav.navigation-menu {
+    float: right;
+    padding: 10px 10px;
+    position: relative;
+    right: 5px;
+}
+
+.text-link {
+    text-decoration: none;
+    color: #333333;
+} 
+
+.text-link:hover {
+    color: #E13834;
+    font-weight: bold;
+}
+
+div.menu-icon {
+    background: url('../image/menu.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: none;
+    width: 50px;
+    height: 50px;
+}
+
+div.menu-icon:hover {
+    background: #333333;
+    border-radius: 10px 10px 0px 0px;
+}
+
+ul.list-menu {
+    list-style: none;
+}
+
+li.item-menu {
+    display: inline-block;
+    font-family: "IBMPlexSans - Regular", sans-serif;
+    padding: 0px 20px;
+    text-transform: uppercase;
+}
+
+button.button-menu {
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: "IBMPlexSans - Regular", sans-serif;
+    font-size: 15px;
+    outline: none;
+    padding: 15px 50px;
+    text-transform: uppercase;
+}
+
+.button-live {
+    background: #E13834;
+    color: #EBEBEB;
+    transition: 0.6s ease;
+}
+
+.button-live:hover {
+    background: rgb(214, 24, 21);
+    color: #EBEBEB;
+}
+
+.button-account {
+    background: #A5A5A5;
+    color: #333333;
+    transition: 0.6s ease;    
+}
+
+.button-account:hover {
+    background: rgb(139, 139, 139);
+    color: #333333;
+}
+
+@media (min-width: 300px) and (max-width: 670px) {
+    div.menu-icon {
+        display: block;
+        margin: 0px 10px;
+    }
+
+    nav.navigation-menu {
+        padding: 10px 10px; 
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    nav.navigation-menu ul.list-menu, nav.navigation-menu:active ul.list-menu {
+        background: #EBEBEB;
+        border: 4px solid #333333;
+        display: none;
+        padding: 40px 20px;
+        position: absolute;
+        top: 55px;
+        right: 0px;
+    }
+
+    nav.navigation-menu:hover ul.list-menu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        overflow: auto;        
+        width: 280px;
+        height: 70vh;
+    }
+
+    li.item-menu {
+        padding: 20px 0px;
+        margin: 10px 0;
+    }
+
+    button.button-menu {
+        width: 200px;
+        height: 60px;
+        margin: 10px 0;        
+    }
+
+    hr.separator {
+        display: block;
+    }
+}

@@ -1,0 +1,103 @@
+/* CSS */
+
+@font-face {
+    font-family: "IBMPlexSans - Regular";
+    src: url('../fonts/IBMPlexSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: "URWbookMan - Light ";
+    src: url("../fonts/URWBookman-Light.otf");
+}
+
+@font-face {
+    font-family: "Raleway - Light";
+    src: url("../fonts/Raleway-Light.ttf");
+}
+
+section.banner-part {    
+    background: linear-gradient(#E13834, #7B1E1E);
+    padding: 150px 0;
+    width: 100%;
+    height: auto;
+}
+
+*.child-banner {
+    margin: 55px 0px;
+}
+
+h2.slug-web {
+    color: #EBEBEB;
+    font-family: "Raleway - Light", sans-serif;
+    font-size: 46px;
+    font-weight: 100;
+}
+
+h2.slug-web span.bold-text {
+    font-weight: bold;
+}
+
+div.block-form-search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+input.input-item {
+    color: #333333;
+    font-family: "IBMPlexSans - Regular", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 18px 40px;
+    margin: 0px 5px;        
+}
+
+input.input-search {
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+input.input-search:focus {
+
+}
+
+input.button-search {
+    border: none;
+    border-radius: 5px;    
+    outline: none;
+}
+
+p.subtitle-text {
+    font-family: "Raleway - Light", sans-serif;
+    font-size: 16px;
+    color: #EBEBEB;
+    font-style: italic;
+}
+
+
+
+
+@media (min-width: 300px) and (max-width: 680px) {
+    section.banner-part {    
+        height: 400px;
+        padding: 100px 0px;
+    }
+    
+    h2.slug-web {
+        font-size: 29px;
+    }
+
+    div.block-form-search {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input.input-item {
+        margin: 10px 0px;
+    }
+    
+    p.subtitle-text {
+        font-size: 13px;
+    }
+}
